@@ -1,0 +1,13 @@
+{
+  "name": "Conda_env",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "postCreateCommand": "conda env create -f environment.yml && echo 'conda activate comic' >> ~/.bashrc",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-python.python"
+  ]
+}
